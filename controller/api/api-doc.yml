@@ -1,0 +1,33 @@
+openapi: '3.0.2'
+info:
+  title: Multi Spectral Camera
+  version: '1.0'
+servers:
+  - url: /api
+paths: {}
+security:
+  - XAuthToken: []
+components:
+  securitySchemes:
+    XAuthToken:
+      type: apiKey
+      in: header
+      name: X-Auth-Token
+  schemas:
+    Error:
+      type: object
+      properties:
+        code: 
+          type: integer
+        message:
+          type: string
+    Status:
+      type: object
+      required:
+        - name
+        - version
+      properties:
+        name:
+          type: string
+        version:
+          type: string
