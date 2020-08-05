@@ -4,14 +4,17 @@
   "description": "Camera multi-spectrique demonstarteur",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --recursive",
     "start": "node index.js"
   },
   "author": "Marc Despland",
   "license": "Apache-2.0",
   "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "express": "^4.17.1",
     "express-openapi": "^7.0.0",
+    "mocha": "^8.1.1",
     "pigpio": "^3.2.3",
     "raspicam": "^0.2.14",
     "swagger-ui-express": "^4.1.4"
