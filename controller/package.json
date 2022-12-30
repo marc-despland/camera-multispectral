@@ -14,7 +14,7 @@
     "chai-as-promised": "^7.1.1",
     "express": "^4.17.1",
     "express-openapi": "^7.0.0",
-    "mocha": "^8.1.1",
+    "mocha": "^8.4.0",
     "pigpio": "^3.2.3",
     "raspicam": "^0.2.14",
     "swagger-ui-express": "^4.1.4"
